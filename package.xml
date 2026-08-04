@@ -1,0 +1,26 @@
+<?xml version ="1.0"?>
+
+<package format="3">
+    <name>nav2_extension</name>
+
+    <version>0.0.1</version>
+
+    <description>
+        Custom Nav2 extensions for learning and experimentation.
+    </descripton>
+
+    <maintainer email="mmhdimansouri@gmail.com">
+        Mehtimans
+    </maintainer>
+
+    <license>MIT</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+
+</package>
+
+
