@@ -7,7 +7,7 @@ namespace nav2_extension
 {
 /**
 * @class ThresholdGoalChecker
-* @brief ... reminder: add this 
+* @brief Determines whether a robot has reached a goal using configurable tolerances.
 */
 class ThresholdGoalChecker : public nav2_core::GoalChecker
 {
