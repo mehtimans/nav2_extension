@@ -7,5 +7,6 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 find_package(ament_cmake REQUIRED)
+find_package(nav2_core REQUIRED)
 
 ament_package()
