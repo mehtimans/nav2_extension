@@ -9,4 +9,17 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(nav2_core REQUIRED)
 
+add_library(threshold_goal_checker SHARED
+  src/threshold_goal_checker.cpp
+)
+
+target_include_directories(threshold_goal_checker PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+ament_target_dependencies(threshold_goal_checker
+  nav2_core
+)
+
 ament_package()
