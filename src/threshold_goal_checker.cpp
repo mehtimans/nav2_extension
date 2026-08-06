@@ -4,9 +4,12 @@
 namespace nav2_extension
 {
 
+ThresholdGoalChecker::ThresholdGoalChecker()
+{
+}
+
 void ThresholdGoalChecker::reset()
 {
-
 }
 
 }

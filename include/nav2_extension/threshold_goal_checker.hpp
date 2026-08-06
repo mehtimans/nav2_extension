@@ -12,6 +12,9 @@ namespace nav2_extension
 class ThresholdGoalChecker : public nav2_core::GoalChecker
 {
 public:
+    ThresholdGoalChecker();
+    ~ThresholdGoalChecker() override = default; 
+
     void initialize(
         const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
         const std::string & plugin_name,
@@ -26,6 +29,11 @@ public:
     bool getTolerances(
         geometry_msgs::msg::Pose & pose_tolerance,
         geometry_msgs::msg::Twist & vel_tolerance) override;
+
+protected:
+    double xy_goal_tolerance_;
+    double yaw_goal_tolerance_;
+    double stopped_velocity_tolerance_;
 };
 
 } // namespace nav2_extension
