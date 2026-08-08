@@ -12,4 +12,11 @@ void ThresholdGoalChecker::reset()
 {
 }
 
+void ThresholdGoalChecker::initialize(
+    const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
+    const std::string & plugin_name,
+    const std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros)
+{
 }
+
+} // namespace nav2_extension

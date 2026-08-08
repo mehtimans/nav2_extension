@@ -8,6 +8,8 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(nav2_core REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
+find_package(nav2_costmap_2d REQUIRED)
 
 add_library(threshold_goal_checker SHARED
   src/threshold_goal_checker.cpp
@@ -20,6 +22,8 @@ target_include_directories(threshold_goal_checker PUBLIC
 
 ament_target_dependencies(threshold_goal_checker
   nav2_core
+  rclcpp_lifecycle
+  nav2_costmap_2d
 )
 
 ament_package()
